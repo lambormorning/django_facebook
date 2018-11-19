@@ -27,16 +27,16 @@ from facebook.views import edit_feed
 from facebook.views import new_page
 
 
-urlpatterns = [
+urlpatterns = {
     path('admin/', admin.site.urls),
     path('play', play),
     path('play2', play2),
     path('myname/profile/dsfasdfasdf', profile),  # 앞의 경로로 들어오면, 뒤에 함수를 호출해라
     path('week3', week3),
-    path('', newsfeed),git
+    path('', newsfeed),
     path('feed/<pk>/', detail_feed),
     path('feed/<pk>/remove/', remove_feed),
     path('feed/<pk>/edit/', edit_feed),
     path('new/', new_feed),
     path('pages/new/', new_page),
-    ]
+}
